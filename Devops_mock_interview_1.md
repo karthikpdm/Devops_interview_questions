@@ -5,14 +5,19 @@ GIT
 ---------------------------------------------------------------------------------------------------------------------------------
 1. Why we need git? What makes git unique from other tools like SVN?
 2. Let's say i have maven repo cloned on to my local, did some changes and i have build the code now target folder will be generated. So now when i do git operations like git add, git commit or any other git operations target folder should not be considered, how would you achieve the same?
-3. difference between git pull and git fetch?
-4. How to clone specific branch in git?
+ans : use .gitignore
+4. difference between git pull and git fetch?
+5. How to clone specific branch in git?
+Ans : git clone -b <baranch_name> --single-branch url
+after we list the branches using the git branch -a it will list that particular branch only
 
 Maven
 --------------------------------------------------------------------------------------------------------------------------
 5. when i issue mvn install what all things happen in background?
-6. what are the settings you need to do before running mvn deploy?
-7. why maven takes much time for 1st execution and from 2nd execution it will take less time?
+![image](https://github.com/karthikpdm/Devops_interview_questions/assets/108477836/75ca0977-2e7b-484d-9cb9-805d98950a80)
+
+7. what are the settings you need to do before running mvn deploy?
+8. why maven takes much time for 1st execution and from 2nd execution it will take less time?
 
 Unix and Shell Scripting 
 --------------------------------------------------------------------------------------------------------
