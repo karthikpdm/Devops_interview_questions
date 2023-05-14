@@ -5,9 +5,12 @@
 GIT
 ---------------------------------------------------------------------------------------------------------------------------------
 1. Lets say your organization has github and bitbucket to store code, you have cloned a repo onto your local and changed directory name. after some days one of your team members asks you to share clone link, how would you provide the same?
-2. I have shell script to delete particular dependency ( repo is maven project ). before running the script i need to clone repo to my local, here point to note i should only clone master branch and only last commit ( last commit has all the code ) how would you do this?
-3. what is submodule and why we need submodule?
-4. Lets say you have changed 5 files a,b,c,d and e in a repo and you did git add ., now all the files are in staging area, now i decided not to commit file d. how would delete it from staging area?
+Ans: git remote -v so that we can get a orgin of the repo
+3. I have shell script to delete particular dependency ( repo is maven project ). before running the script i need to clone repo to my local, here point to note i should only clone master branch and only last commit ( last commit has all the code ) how would you do this?
+Ans: git clone -b --single-branch -depth 1 url
+5. what is submodule and why we need submodule?
+6. Lets say you have changed 5 files a,b,c,d and e in a repo and you did git add ., now all the files are in staging area, now i decided not to commit file d. how would delete it from staging area?
+Ans : git rm --cached <filename>
 
 Maven
 --------------------------------------------------------------------------------------------------------------------------
@@ -18,12 +21,15 @@ Jenkins
 --------------------------------------------------------------------------------------------------------
 7. Have you worked on commit based job in jenkins? what settings you need to do in jenkins and github to setup commit based job?
 8. you want to create 50 freestyle jobs with same configurations, but only change is job name. how would you achieve the same?
+Ans : take the declarative pipeline and go to the managejenkins--> scriptconsole-->past the dscript and run it will create the new job in the pipeline
+  and also we can do it by using the for loop
 9. How can you copy job from your local jenkins instance to other local jenkins instance?
 
 Unix and Shell scripting 
 ---------------------------------------------------------------------------------------------------------------------
 10. write a script which accepts file or folder, if its folder delete it else print "this is a file"?
 11. How to check whether particular port is already in use or not?
+ Ans : netstat -tupln
 12. Logic for checking whether supplied string for a script is palindrome or not? what are all the commands you will use?
 13. command to get number of lines in a file?
 
