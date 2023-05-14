@@ -17,13 +17,18 @@ Maven
 ![image](https://github.com/karthikpdm/Devops_interview_questions/assets/108477836/75ca0977-2e7b-484d-9cb9-805d98950a80)
 
 7. what are the settings you need to do before running mvn deploy?
-8. why maven takes much time for 1st execution and from 2nd execution it will take less time?
+Ans : with respect where we are uploading our artifacts like jfrog,nexas etc
+we need to give the url of the reposiory and username and password of that remote repository.
+9. why maven takes much time for 1st execution and from 2nd execution it will take less time?
+Ans:so for the first time if we clone the repo it will store it in the .m2 folder so if we clone for the 2nd time it first check
+in the local repo and if it already exist then it will skip the cloaning, other then that it will clone.
 
 Unix and Shell Scripting 
 --------------------------------------------------------------------------------------------------------
 8. How to get present working folder?
-9. How to copy files from local windows machine to cloud based Linux machine?
-10. A shell script named test.sh can accept 4 parameters i.e, a,b,c,d. the parameters wont be supplied in order always and number of parameters might also vary( only 2 parameters user might supply sometimes), how to identify position of letter c?
+Ans : basename "$pwd"
+10. How to copy files from local windows machine to cloud based Linux machine?
+11. A shell script named test.sh can accept 4 parameters i.e, a,b,c,d. the parameters wont be supplied in order always and number of parameters might also vary( only 2 parameters user might supply sometimes), how to identify position of letter c?
 
 Ansible
 ---------------------------------------------------------------------------------------------------------------------
@@ -32,6 +37,10 @@ Ansible
 13. what is ansible.cfg file?
 14. what are the modules have you worked on? which module will you use for getting the file from node to master?
 15. Lets say i have a playbook which has 5 tasks in playbook, first 2 tasks should run on local machine and other 3 tasks should run on node?
+Ans : 1) using the single play and the multiple play so in the multiple play we can mention the multiple hosts so in the first host we can run the 2 tasks amd
+in the other host we can run the other 3 tasks.
+2) usin the when condition also we can do this purpose.
+
 
 Jenkins
 -----------------------------------------------------------------------------------------------------------------------
