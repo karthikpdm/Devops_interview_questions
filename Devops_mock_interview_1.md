@@ -54,14 +54,21 @@ Docker
 20. Any 3 best practices of docker?
 21. Difference between docker stop and docker kill?
 22. Command to list conatiners which state is exited?
-23. command to clean-up docker host ( deleting stopped conatiners, dangling images and unused networks)?
-24. What version of docker you have used? Specific reason to use that particular version?
-25. Can we have multiple CMD in Dockerfile?
-26. Have you worked on docker swarm and docker compose?
+Ans : docker ps -a f status=running
+                           = exited
+24. command to clean-up docker host ( deleting stopped conatiners, dangling images and unused networks)?
+Ans : docker system prune
+26. What version of docker you have used? Specific reason to use that particular version?
+Ans: 
+28. Can we have multiple CMD in Dockerfile?
+29. Have you worked on docker swarm and docker compose?
 
 Kubernetes
 --------------------------------------------------------------------------------------------------------------------------------------
-27. Can we have multiple conatiners in a pod? Can we have similar conatiners in a pod? Lets say i have 4 conatiners, one of them has failed how would you check which container has failed?
-28. What is liveness and readiness probe? Why we need them?
-29. Have you worked on kubernetes monitoring? Which tools you have used?
-30. Can we deploy a pod on particular node?
+27. Can we have multiple conatiners in a pod? Can we have similar conatiners in a pod?ans : no
+28.  Lets say i have 4 conatiners, one of them has failed how would you check which container has failed? kubecl describe pods
+29. What is liveness and readiness probe? Why we need them?
+![image](https://github.com/karthikpdm/Devops_interview_questions/assets/108477836/16aa7ddb-04c4-4c26-9d3d-00e4b0383eb2)
+
+31. Have you worked on kubernetes monitoring? Which tools you have used?
+32. Can we deploy a pod on particular node?
